@@ -1,0 +1,7 @@
+{
+    "education": [
+        {"title": "Bachelor of Arts in History and Film & Television Studies", "id": 1, "details": "University of Cape Town"},
+        {"title": "Bachelor of Arts Honours in History", "id": 2, "details": "University of the Western Cape"},
+        {"title": "Web Development", "id": 3, "details": "Life Choices"}
+    ]
+}
