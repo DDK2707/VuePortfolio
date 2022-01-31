@@ -1,54 +1,57 @@
 <template>
-    <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>|
-    <router-link to="/education">Education</router-link>|
-    <router-link to="/work">Work</router-link>|
-    <router-link to="/contact">Contact</router-link>|
-  </div>
-  <router-view />
+    <VueScrollFixedNavbar>
+      <div id="nav">
+        <router-link to="/">Home</router-link> |
+        <router-link to="/about">About</router-link>|
+        <router-link to="/resume">Resume</router-link>|
+        <router-link to="/work">Projects</router-link>|
+        <router-link to="/contact">Contact</router-link>|
+      </div>
+    </VueScrollFixedNavbar>
 </template>
 
 <script>
-export default {
-
-}
+// import {VueScrollFixedNavbar} from "vue-scroll-fixed-navbar"
+// export default {
+//   name: 'Navbar',
+//   components: {
+//     VueScrollFixedNavbar
+//   }
+// }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
 #nav {
   padding: 30px;
+  background-color:  rgb(121, 110, 110, 0.6);
+  width: 50%;
+  border-radius: 20px;
   
 }
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: black;
   margin: 30px;
+  text-decoration: none;
+  border-radius: 20px;
 }
 
 #nav a:hover {
-  color: white;
-  background-color: crimson;
+  color: black;
+  background-color: rgb(218, 105, 105);
   padding: 10px;
-  border-radius: 4px;
+  border-radius: 20px;
   border: black solid;     
   transition: 0.5s; 
 }
 
 #nav a.router-link-exact-active {
-  color: white;
-  background-color: crimson;
+  color:black;
+  background-color: rgb(218, 105, 105);
   padding: 10px;
-  border-radius: 4px;
+  border-radius: 20px;
   border: black solid;
 }
 </style>

@@ -1,7 +1,11 @@
 {
     "education": [
-        {"title": "Bachelor of Arts in History and Film & Television Studies", "id": 1, "details": "University of Cape Town"},
-        {"title": "Bachelor of Arts Honours in History", "id": 2, "details": "University of the Western Cape"},
-        {"title": "Web Development", "id": 3, "details": "Life Choices"}
+        {"title": "Bachelor of Arts in History and Film & Television Studies", "id": "edu1", "details": "University of Cape Town. Electives: French, linguistics, anthropology, archeology, ancient history, etymology, mythology. Mar 2017 - Nov 2019"},
+        {"title": "Bachelor of Arts Honours in History", "id": "edu2", "details": "University of the Western Cape. Research paper on how orality, photography and matriarchal family structures contribute to identity. Feb 2020 - Feb 2021"},
+        {"title": "Web Development", "id": "edu3", "details": "Life Choices. Sept 2021 - "}
+    ],
+    "jobs": [
+        {"title": "Retail Assistant", "id": "work1", "details": "Fuji Image Centre, Kenilworth Centre. Apr 2017-Mar 2018"},
+        {"title": "Front of House/Usher", "id": "work2", "details": "Baxter Theatre Centre. Nov 2018-Mar 2020"}
     ]
 }
