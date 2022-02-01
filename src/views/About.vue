@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" id="aboutcontainer">
     <div class="row">
       <div class="col-md-6">
         <img src="../assets/Images/landingpic2.jpg" alt="" class="landingphoto">
@@ -25,6 +25,13 @@
     <div class="row">
       <div class="col-md-6">
         <h1>Soft Skills</h1>
+        <div class="hardskills">
+                    <h3 class="skilllist">Leadership Skills</h3>
+                    <h3 class="skilllist">Time Management</h3>
+                    <h3 class="skilllist">Problem Solving</h3>
+                    <h3 class="skilllist">Data Analysis</h3>
+                    <h3 class="skilllist"></h3>
+                </div>
       </div>
       <div class="col-md-6"> 
         <img src="../assets/Images/landingphoto.jpg" alt="" class="landingphoto2">
@@ -44,11 +51,17 @@ export default {
   width: 700px;
   height: 500px;
   margin-left: -50px;
+  border-radius: 15%;
 }
 
 .landingphoto2 {
   width: 500px;
   height: 750px;
+  border-radius: 15%;
+}
 
+#aboutcontainer {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 </style>

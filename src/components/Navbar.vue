@@ -4,7 +4,7 @@
         <router-link to="/">Home</router-link> |
         <router-link to="/about">About</router-link>|
         <router-link to="/resume">Resume</router-link>|
-        <router-link to="/work">Projects</router-link>|
+        <router-link to="/projects">Projects</router-link>|
         <router-link to="/contact">Contact</router-link>|
       </div>
     </VueScrollFixedNavbar>
@@ -53,5 +53,11 @@
   padding: 10px;
   border-radius: 20px;
   border: black solid;
+}
+
+@media screen and (max-width: 955px) {
+  #nav a {
+    margin-top: 500px;
+  }
 }
 </style>

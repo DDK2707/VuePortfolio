@@ -4,6 +4,7 @@
         <div v-for="edu of education" :key="edu.id" class="education">
             <h2>{{edu.title}}</h2>
             <h4>{{edu.details}}</h4>
+            <h4>{{edu.date}}</h4>
         </div> 
     </div>
     <h1 class="sectiontitle">Work Experience</h1>
@@ -11,6 +12,7 @@
         <div v-for="job of jobs" :key="job.id" class="jobs">
             <h2>{{job.title}}</h2>
             <h4>{{job.details}}</h4>
+            <h4>{{job.date}}</h4>
         </div>
     </div>
 
@@ -19,21 +21,31 @@
         <div class="row">
             <div class="col-md-6">
                 <h2> Hard Skills </h2>
+                <div class="hardskills">
+                    <h3 class="skilllist">Writing</h3>
+                    <h3 class="skilllist">Web Development</h3>
+                    <h3 class="skilllist">Copywriting</h3>
+                    <h3 class="skilllist">Editing</h3>
+                    <h3 class="skilllist">Research</h3>
+                </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" id="languages">
                 <h2>Languages</h2>
+                <div class="skillsbar">
+                    <SkillsBar />
+                </div>
             </div>
         </div>
     </div>
 
     <h1 class="sectiontitle">Testimonials</h1>
-      <div class="testcontainer">
+    <div class="testcontainer">
     <div class="row">
         <div class="col-lg-4">
             <div class="card">
-                <div class="face front-face"> <img src="Testimonials/alextest.jpg" alt="" class="profile">
+                <div class="face front-face"> <img src="../../assets/Testimonials/alextest.jpg" alt="" class="profile">
                     <div class="pt-3 text-uppercase name"> Alex Sexwale </div>
-                    <div class="designation">Lecturer</div>
+                    <div class="designation"> Lecturer </div>
                 </div>
                 <div class="face back-face"> <span class="fas fa-quote-left"></span>
                     <div class="testimonial"> Dale is creative and focused. He is goal driven, which will help him succeed in his life dreams. </div> <span class="fas fa-quote-right"></span>
@@ -42,56 +54,56 @@
         </div>
         <div class="col-lg-4">
             <div class="card">
-                <div class="face front-face"> <img src="Testimonials/Cameron3.JPG" alt="" class="profile">
-                    <div class="pt-3 text-uppercase name"> Cameron Bowers </div>
-                    <div class="designation">Colleague</div>
+                <div class="face front-face"> <img src="../../assets/Testimonials/yaasientest.jpg" alt="" class="profile">
+                    <div class="pt-3 text-uppercase name"> Yaasien Salaam </div>
+                    <div class="designation"> Colleague </div>
                 </div>
                 <div class="face back-face"> <span class="fas fa-quote-left"></span>
-                    <div class="testimonial"> Dale is determined and hardworking. He is a great web developer and produces high quality work. He is extremely inspiring and also really knowledgeable </div> <span class="fas fa-quote-right"></span>
+                    <div class="testimonial"> Dale is a determined developer, always dedicated, and willing to adapt and learn new things, he also helps his colleagues when and where he can. If you're looking for a focused and perfectionist developer, Dale is the developer for you. </div> <span class="fas fa-quote-right"></span>
                 </div>
             </div>
         </div>
         <div class="col-lg-4">
             <div class="card">
-                <div class="face front-face"> <img src="Testimonials/amaarahtest2.jpg" alt="" class="profile">
-                    <div class="pt-3 text-uppercase name"> Amaarah January</div>
-                    <div class="designation">Colleague</div>
+                <div class="face front-face"> <img src="../../assets/Testimonials/amaarahtest2.jpg" alt="" class="profile">
+                    <div class="pt-3 text-uppercase name"> Amaarah January </div>
+                    <div class="designation"> Colleague </div>
                 </div>
                 <div class="face back-face"> <span class="fas fa-quote-left"></span>
-                    <div class="testimonial"> Dale is a confident, hard-working and intelligent person. He always finds ways to be unique and creative with whatever he works on. He is a natural born leader with the ability to also listen to the input of others.</div> <span class="fas fa-quote-right"></span>
+                    <div class="testimonial"> Dale is a confident, hard-working and intelligent person. He always finds ways to be unique and creative with whatever he works on. He is a natural born leader with the ability to also listen to the input of others. </div> <span class="fas fa-quote-right"></span>
                 </div>
             </div>
         </div>
         <div class="col-lg-4">
           <div class="card">
-              <div class="face front-face"> <img src="Testimonials/kyletest2.png" alt="" class="profile">
-                  <div class="pt-3 text-uppercase name"> Kyle McBryne </div>
-                  <div class="designation">Colleague</div>
+              <div class="face front-face"> <img src="../../assets/Testimonials/DalarnoTest.jpg" alt="" class="profile">
+                  <div class="pt-3 text-uppercase name"> Dalarno van Rooi </div>
+                  <div class="designation"> Colleague </div>
               </div>
               <div class="face back-face"> <span class="fas fa-quote-left"></span>
-                  <div class="testimonial"> Dale is a very solicitous person,caring about his peers while being hard-working and determined in the process. </div> <span class="fas fa-quote-right"></span>
+                  <div class="testimonial"> Dale, a being easily described as Dedicated, Kind, Hardworking. I can tell you for nothing at all that you've never seen somebody as unique as he, he will amaze you and change your understanding about what it is to be a friend as well as being a complete 'beast' in the work environment. His addition to any team will uplift the workspace undeniably. </div> <span class="fas fa-quote-right"></span>
               </div>
           </div>
       </div>
       <div class="col-lg-4">
         <div class="card">
-            <div class="face front-face"> <img src="Testimonials/DalarnoTest.jpg" alt="" class="profile">
-                <div class="pt-3 text-uppercase name"> Dalarno van Rooi </div>
-                <div class="designation">Colleague</div>
+            <div class="face front-face"> <img src="../../assets/Testimonials/kyletest2.png" alt="" class="profile">
+                <div class="pt-3 text-uppercase name"> Kyle McBryne </div>
+                <div class="designation"> Colleague </div>
             </div>
             <div class="face back-face"> <span class="fas fa-quote-left"></span>
-                <div class="testimonial"> Dale, a being easily described as Dedicated, Kind, Hardworking. I can tell you for nothing at all that you've never seen somebody as unique as he, he will amaze you and change your understanding about what it is to be a friend as well as being a complete 'beast' in the work environment. His addition to any team will uplift the workspace undeniably. </div> <span class="fas fa-quote-right"></span>
+                <div class="testimonial"> Dale is a very solicitous person,caring about his peers while being hard-working and determined in the process. </div> <span class="fas fa-quote-right"></span>
             </div>
         </div>
     </div>
     <div class="col-lg-4">
       <div class="card">
-          <div class="face front-face"> <img src="Testimonials/yaasientest.jpg" alt="" class="profile">
-              <div class="pt-3 text-uppercase name"> Yaasien Salaam </div>
-              <div class="designation">Colleague</div>
+          <div class="face front-face"> <img src="" alt="" class="profile">
+              <div class="pt-3 text-uppercase name"> Cameron Bowers </div>
+              <div class="designation"> Colleague </div>
           </div>
           <div class="face back-face"> <span class="fas fa-quote-left"></span>
-              <div class="testimonial"> Dale is a determined developer, always dedicated, and willing to adapt and learn new things, he also helps his colleagues when and where he can. if you looking for a focused and perfectionist developer, Dale is the developer for you. </div> <span class="fas fa-quote-right"></span>
+              <div class="testimonial"> Dale is determined and hardworking. He is a great web developer and produces high quality work. He is extremely inspiring and also really knowledgeable. </div> <span class="fas fa-quote-right"></span>
           </div>
       </div>
   </div>
@@ -99,31 +111,38 @@
     </div>
 </div>
 </template>
-x
-<script>
-export default {
 
+<script>
+import SkillsBar from '../../components/SkillsBar.vue'
+
+export default {
+    
     data(){
         return {
             education: null, 
             jobs: null
         }
     },
-    mounted() {
-        fetch('http://localhost:3000/education')
-            .then(res => res.json())
-            .then(data => {
-                console.log(data)
-                this.education = data
-            })
+        mounted() {
+            fetch('http://localhost:3000/education')
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data)
+                    this.education = data
+                })
             .catch(err => console.log(err.message))
         fetch('http://localhost:3000/jobs')
             .then(res => res.json())
             .then(data => {
                 this.jobs = data
             })
-            .catch(err => console.log(err.message))
+            .catch(err => console.log(err.message))   
     }, 
+    
+    name: 'Resume',
+    components: {
+        SkillsBar
+    }
 }
 
 </script>
@@ -230,5 +249,28 @@ export default {
 
 .card:hover .face.back-face {
     transform: rotateY(360deg)
+}
+
+@media screen and (max-width: 955px) {
+    .testcontainer {
+        margin-left: 68px;
+    }
+
+    #languages {
+        margin-top: 40px
+    }
+
+}
+
+.hardskills {
+    margin-top: 100px;
+    align-items: center;
+}
+
+.skilllist {
+    /* width: 50%; */
+    margin-top: 20px;
+    border-radius: 100px;
+    box-shadow: 3px 3px 30px 3px rgba(0, 0, 0, 0.3);
 }
 </style>

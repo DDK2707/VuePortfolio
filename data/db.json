@@ -1,11 +1,19 @@
 {
     "education": [
-        {"title": "Bachelor of Arts in History and Film & Television Studies", "id": "edu1", "details": "University of Cape Town. Electives: French, linguistics, anthropology, archeology, ancient history, etymology, mythology. Mar 2017 - Nov 2019"},
-        {"title": "Bachelor of Arts Honours in History", "id": "edu2", "details": "University of the Western Cape. Research paper on how orality, photography and matriarchal family structures contribute to identity. Feb 2020 - Feb 2021"},
-        {"title": "Web Development", "id": "edu3", "details": "Life Choices. Sept 2021 - "}
+        {"title": "Bachelor of Arts in History and Film & Television Studies", "id": "edu1", "details": "University of Cape Town. Electives: French, linguistics, anthropology, archeology, ancient history, etymology, mythology", "date": "Mar 2017 - Nov 2019"},
+        {"title": "Bachelor of Arts Honours in History", "id": "edu2", "details": "University of the Western Cape. Research paper on how orality, photography and matriarchal family structures contribute to identity", "date": "Feb 2020 - Feb 2021"},
+        {"title": "Web Development", "id": "edu3", "details": "Life Choices", "date": "Sept 2021 - "}
     ],
     "jobs": [
-        {"title": "Retail Assistant", "id": "work1", "details": "Fuji Image Centre, Kenilworth Centre. Apr 2017-Mar 2018"},
-        {"title": "Front of House/Usher", "id": "work2", "details": "Baxter Theatre Centre. Nov 2018-Mar 2020"}
+        {"title": "Retail Assistant", "id": "work1", "details": "Fuji Image Centre, Kenilworth Centre", "date": "Apr 2017-Mar 2018"},
+        {"title": "Front of House/Usher", "id": "work2", "details": "Baxter Theatre Centre", "date": "Nov 2018-Mar 2020"}
+    ],
+    "projects": [
+        {"title": "First Portfolio", "id": "project1", "description": "My first portfolio, using HTML, CSS and very basic JavaScript", "languages": "HTML, CSS, JavaScript", "github": "", "netlify": "", "image": "../../assets/Projects/firstportfolio.png"},
+        {"title": "Point of Sale", "id": "project2", "description": "Point of Sale using HTML, CSS and Javascript", "languages": "HTML, CSS, JavaScript", "github": "", "netlify": "", "image": ""},
+        {"title": "First Full Site", "id": "project3", "description": "The first full site I made, using HTML and CSS", "languages":"HTML, CSS", "github": "", "netlify": "", "image": ""},
+        {"title": "JavaScript Calculator", "id": "project4", "description": "Calculator built with Javascript", "languages":"HTML, CSS, JavaScript", "github": "", "netlify": "", "image": ""},
+        {"title": "Reaction Timer", "id": "project5", "description": "Reaction timer built with VueJS, styled with CSS", "languages": "VueJS", "github": "", "netlify": "", "image": ""},
+        {"title": "Bootstrap E-Commerce Site", "id": "project5", "description": "Introduction to bootstrap. E-Commerce site centred around vinyl records", "languages": "HTML, CSS, Bootstrap", "github": "", "netlify": "", "image": ""}
     ]
 }
